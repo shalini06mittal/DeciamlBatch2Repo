@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class NestedLoopDemo {
+
+	public static void printTable(int no)
+	{
+		for(int i=1;i<=10;i++) // inner loop => columns, will restart for every new value of outer loop
+			System.out.print(no*i +" ");
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int no;// = sc.nextInt();
+		// to print the multiple of no entered by the user
+		// no = 7 => 7 14 21 28... 70
+		/**
+		 * 1 2 3 4 5 .. 10
+		 * 2 4 6 8 10...
+		 * 3
+		 * 4
+		 * 5
+		 * 
+		 */
+		for(no = 1;no<=5;no++) // outer loop => rows
+		{
+			printTable(no);
+			System.out.println();
+		}
+
+
+	}
+
+}

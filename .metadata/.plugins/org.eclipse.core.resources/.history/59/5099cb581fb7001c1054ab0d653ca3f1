@@ -1,0 +1,13 @@
+package invoicing.datastore;
+
+import invoicing.model.Customer;
+
+public class Database {
+	
+	public Customer[] createCustomer()
+	{
+		Customer[] customers = new Customer[3];
+		customers[0] = new Customer(1, "Shalni", "India", "shalini@gmail.com","", "shalini", "GST-123", "Mumnbai")
+	}
+ 
+}

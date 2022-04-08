@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class JumpStatementDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		do {
+			System.out.println("enter a no or 0 to exit");
+			int no = sc.nextInt();
+			if(no == 0)
+				System.out.println("Thanks for visiting!!");
+			else {
+				System.out.println(Math.pow(no, 4));
+			}
+		}while(no!=0);
+
+	}
+
+}

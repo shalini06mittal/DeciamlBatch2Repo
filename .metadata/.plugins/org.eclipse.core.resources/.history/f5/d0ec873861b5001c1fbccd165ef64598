@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class SwitchMenu {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter choice\n1. Equable\n2. Character to check ");
+		int choice = sc.nextInt();//12
+		switch(choice) {
+		case 1:
+			System.out.println("Enter 3 sides of a triangle");
+			int s1 = sc.nextInt();
+			int s2 = sc.nextInt();
+			int s3 = sc.nextInt();
+			int peri = (s1+s2+s3);
+			double s = peri/2;
+			break;
+		case 2:
+			break;
+		}
+		
+		
+
+	}
+
+}

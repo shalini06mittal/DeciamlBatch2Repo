@@ -1,0 +1,55 @@
+package oops;
+
+public class ProductConstructor {
+
+	
+	private int pid;
+	private String pname;
+	private String description;
+	private double price;
+	
+	public ProductConstructor() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public ProductConstructor(int pid, String pname, String description, double price) {
+
+		this.pid = pid;
+		this.pname = pname;
+		this.description = description;
+		this.price = price;
+	}
+
+
+	// instance methods or member methods
+	public void initialize(int pid, String pname, // arguments of methods are always local variables 
+			String description, double price)// dollars
+	{
+		// local variables and instance variables have same name
+		// then use this to distinguish instance from local
+		this.pid = pid;
+		this.pname = pname;
+		this.description =description;
+		this.price = price * 70;
+	}
+	/*
+	 * 1) security
+	 * 2) apply validations
+	 * 3) role based authorization
+	 * 4) logs
+	 */
+	public void setPrice(double price)
+	{
+//		if(loggedinuser is not admin)
+//			throw notauthorizedexception
+		this.price = price * 70;
+	}
+	public void display()
+	{
+		System.out.println("Id "+pid);
+		System.out.println("name "+pname);
+		System.out.println("Desc "+description);
+		System.out.println("Price "+price);
+	}
+}

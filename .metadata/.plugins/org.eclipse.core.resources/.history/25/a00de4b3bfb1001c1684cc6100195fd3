@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class NestedLoopDemo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int no = sc.nextInt();
+		// to print the multiple of no entered by the user
+		// no = 7 => 7 14 21 28... 70
+
+	}
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/Shalini/Desktop/DecimalBatch2WS/.metadata/.plugins/org.eclipse.jdt.core
+4206395038.index
+2363283036.index
+1865797976.index

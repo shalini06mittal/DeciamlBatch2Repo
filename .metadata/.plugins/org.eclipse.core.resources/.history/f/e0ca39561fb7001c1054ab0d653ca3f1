@@ -1,0 +1,5 @@
+package invoicing.datastore;
+
+public class Database {
+
+}

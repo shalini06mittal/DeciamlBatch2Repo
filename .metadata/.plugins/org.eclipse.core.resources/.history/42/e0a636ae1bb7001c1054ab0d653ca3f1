@@ -1,0 +1,11 @@
+package oops;
+
+public class TestConstructor {
+
+	public static void main(String[] args) {
+		ProductConstructor p1 = new ProductConstructor();
+		ProductConstructor p2 = new ProductConstructor(1, "p1", "d1", 232);
+
+	}
+
+}

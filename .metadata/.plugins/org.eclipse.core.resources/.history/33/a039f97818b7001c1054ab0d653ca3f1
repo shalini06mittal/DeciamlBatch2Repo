@@ -1,0 +1,11 @@
+package invoicing;
+
+public class Product {
+
+	// pid, pname, description, price
+	int pid;
+	String pname;
+	String description;
+	double price;
+	
+}

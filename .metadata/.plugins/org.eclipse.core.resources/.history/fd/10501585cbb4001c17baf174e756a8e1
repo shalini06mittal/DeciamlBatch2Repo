@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class SeriesSum {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter 1st smaller number ");
+		int n1 = sc.nextInt();//12
+		System.out.println("Enter 2nd number");
+		int n2 = sc.nextInt();//15
+		int r = n2%n1 , m = 2, x = 0;
+		while(r!=0)
+		{
+			x = m++ * n1;
+			r = n2%x;
+			
+		}
+		
+
+	}
+
+}

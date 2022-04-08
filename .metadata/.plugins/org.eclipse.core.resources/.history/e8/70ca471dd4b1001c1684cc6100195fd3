@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class NestedLoopDemo {
+
+	public static void printTable(int no)
+	{
+		for(int i=1;i<=10;i++) // inner loop => columns, will restart for every new value of outer loop
+			System.out.print(no*i +" ");
+	}
+	public static void main(String[] args) {
+		/*
+		 * for financial year 2015 to 2020, 
+		 * ask the user to enter how many bills for every year
+		 * and for every bill take the amount and print the
+		 * total of amount for that year
+		 */
+		
+		char ch[] = {'a','e','i','o','u'};
+		System.out.println(ch[ch.length-1]);
+		ch[2] = ch[0]++;
+		System.out.println(ch[2]);
+		)ch[3] = (char)(ch[1] + 2;
+		System.out.println();
+	}
+	
+
+}

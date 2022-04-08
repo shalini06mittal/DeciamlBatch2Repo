@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class NestedLoopDemo {
+
+	public static void printTable(int no)
+	{
+		for(int i=1;i<=10;i++) // inner loop => columns, will restart for every new value of outer loop
+			System.out.print(no*i +" ");
+	}
+	public static void main(String[] args) {
+		for(no = 1;no<=5;no++) // outer loop => rows
+		{
+			printTable(no);
+			System.out.println();
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package invoicing;
+
+public class InvoiceDemo {
+
+	public static void main(String[] args) {
+		
+		// diff product objects
+		// new
+		int a[] = new int[3];
+		// heap
+		Product p1 = new Product();
+		// . operator is used to access the members of a class in another class
+		p1.pid
+
+	}
+
+}

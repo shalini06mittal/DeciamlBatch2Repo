@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+		
+		// declare an array if type int
+		// created an array of size 5 using new
+		int nos[] = new int[5];
+		// intialize the array with values
+		Scanner sc = new Scanner(System.in);
+		for(int i=0;i<nos.length;i++)
+		{
+			System.out.println("Enter value "+(i+1));
+			nos[i] = sc.nextInt();// i=0, 1
+		}
+		for(int i=0;i<nos.length;i++)
+		{
+			System.out.println(nos[i]);
+		}
+		
+		
+	}
+
+}

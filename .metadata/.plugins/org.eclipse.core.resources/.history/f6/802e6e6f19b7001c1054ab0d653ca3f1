@@ -1,0 +1,29 @@
+package invoicing;
+// classes are blueprint/ basic structure
+public class Product {
+
+	// pid, pname, description, price
+	// instance variable or data members
+	int pid;
+	String pname;// laptop , bluetooth
+	String description;
+	double price;
+	// instance methods or member methods
+	void initialize(int pid, String pname, // arguments of methods are always local variables 
+			String description, double price)
+	{
+		// local variables and instance variables have same name
+		// then use this to distinguish instance from local
+		this.pid = pid;
+		this.pname = pname;
+		this.description =description;
+		this.price = price;
+	}
+	void display()
+	{
+		System.out.println("Id "+pid);
+		System.out.println("name "+pname);
+		System.out.println("Desc "+description);
+		System.out.println("Price "+price);
+	}
+}

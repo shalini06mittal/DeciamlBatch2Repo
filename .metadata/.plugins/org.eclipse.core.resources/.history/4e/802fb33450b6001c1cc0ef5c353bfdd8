@@ -1,0 +1,15 @@
+
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+		
+		// declare, create and initialize
+		int arr[] = new int[5]; // declare and create
+		int arr1[] = {1,2,3,4,5}; // delare, create and initialize
+		int arr2[];// declare
+		arr2 = new int[5];// creation
+		int arr3[] = new int[] {1,2,3,4,5};
+		
+	}
+
+}

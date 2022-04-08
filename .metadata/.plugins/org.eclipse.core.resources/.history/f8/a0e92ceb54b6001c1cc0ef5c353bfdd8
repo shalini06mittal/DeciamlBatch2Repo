@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+
+		// declare an array if type int
+		// created an array of size 5 using new
+		int nos[] = new int[5];
+		// intialize the array with values
+		Scanner sc = new Scanner(System.in);
+		for(int i=0;i<nos.length;i++)
+		{
+			System.out.println("Enter value "+(i+1));
+			nos[i] = sc.nextInt();// i=0, 1
+		}
+		for(int i=0;i<nos.length;i++)
+		{
+			System.out.println(nos[i]);
+		}
+		/*
+		 *  Take the size as input from the user for array.
+		 *  Create array of type double and take the fahrenheit as input from the user
+		 *  and convert to celcius and print as follows: 
+		 *  Fah		Celcius	
+		 *  -------------------	
+		 *  32		98
+		 */
+
+		System.out.print("Enter 5 Fahrenheit values:: ");
+		double fahrenheit[] =new double[5];
+		
+		for(int i=0;i<5;i++)
+		{
+			fahrenheit[i]=sc.nextDouble();
+
+		}
+		System.out.println("Farenheit\tCelcius");
+		for(int i=0;i<5;i++)
+		{
+			double celsius =(( 5 *(fahrenheit[i] - 32.0)) / 9.0);
+			System.out.println(fahrenheit[i]+"\t"+celsius);
+		}
+
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package invoicing;
+
+public class Product {
+
+	private int pid;
+	private String pname;// laptop , bluetooth
+	private String description;
+	private double price;
+}

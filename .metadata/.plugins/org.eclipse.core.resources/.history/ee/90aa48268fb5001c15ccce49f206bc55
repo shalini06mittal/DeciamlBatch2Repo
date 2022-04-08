@@ -1,0 +1,114 @@
+import java.util.Scanner;
+
+public class Patterns {
+
+	public static void main(String[] args) {
+		/*
+		 * c = 500
+		 * 1 1 1 1 1
+		 * 1 1 1 1 
+		 * 1 1 1 
+		 * 1 1 
+		 * 1 
+		 */
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter no of times to print 1");
+		int n = sc.nextInt();
+		for(int j=1;j<=n;j++ ) // outer loop => rows 
+		{
+			for(int i=1; i<=j; i++) // inner loop => no of columns and BL
+			{
+				System.out.print(1+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		// j = 5
+		for(int j=n;j>=1;j-- ) 
+		{
+			for(int i=1; i<=j; i++) 
+			{
+				System.out.print(1+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		for(int j=1;j<=n;j++ )  
+		{
+			for(int i=n; i>=j; i--) 
+			{
+				System.out.print(1+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		/*
+		 * 1
+		 * 1 2
+		 * 1 2 3
+		 * 1 2 3 4
+		 * 1 2 3 4 5
+		 */
+		for (int i= 1;i<=n;i++)
+		{
+			for (int j =1;j<=i;j++)
+			{
+				System.out.print(j+ " ");
+			}
+			System.out.println();
+		}
+		/*
+		 *  1 
+			2 7 
+			3 8 12 
+			4 9 13 16 
+			5 10 14 17 19 
+			6 11 15 18 20 21 
+			
+			1
+			2 8
+			3 9 14
+			4 10 15 19
+			5 11 16 20 23
+			6 12 17 21 24 26
+			7 13 18 22 25 27 28
+
+		 */
+		System.out.println();
+			for(int i=1;i<=n;i++)
+			{
+				int k = i;
+				for(int j=1;j<=i;j++)
+				{
+					System.out.print(k+" ");
+					k=k+n-j;
+				}
+				System.out.println();
+			}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

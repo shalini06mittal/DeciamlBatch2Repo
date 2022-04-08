@@ -1,0 +1,12 @@
+
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+		
+		int nos[] = new int[5];
+		
+		
+		
+	}
+
+}

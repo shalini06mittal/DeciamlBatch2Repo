@@ -1,0 +1,18 @@
+package invoicing;
+// classes are blueprint/ basic structure
+public class Product {
+
+	// pid, pname, description, price
+	int pid;
+	String pname;// laptop , bluetooth
+	String description;
+	double price;
+	
+	void initialize()
+	{
+		pid = 1;
+		pname = "Laptop";
+		description ="Apple MAC PRO";
+		price = 80000;
+	}
+}

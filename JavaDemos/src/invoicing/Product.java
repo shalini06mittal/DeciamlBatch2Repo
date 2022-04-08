@@ -1,0 +1,23 @@
+package invoicing;
+
+public class Product {
+
+	private int pid;
+	private String pname;
+	private String description;
+	private double price;
+	
+	public Product() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Product(int pid, String pname, String description, double price) {
+		super();
+		this.pid = pid;
+		this.pname = pname;
+		this.description = description;
+		this.price = price;
+	}
+	
+	
+}
