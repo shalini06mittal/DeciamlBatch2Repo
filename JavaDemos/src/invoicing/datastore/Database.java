@@ -5,6 +5,7 @@ import invoicing.model.Item;
 
 public class Database {
 	
+	// jDBC API or hibernate
 	public Customer[] createCustomer()
 	{
 		Customer[] customers = new Customer[3];

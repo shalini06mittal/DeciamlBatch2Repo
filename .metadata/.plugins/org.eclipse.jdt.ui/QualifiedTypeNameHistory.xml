@@ -3,5 +3,13 @@
     <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="invoicing.Product"/>
+    <fullyQualifiedTypeName name="oops.ProductConstructor"/>
+    <fullyQualifiedTypeName name="invoicing.model.Customer"/>
+    <fullyQualifiedTypeName name="invoicing.datastore.Database"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="invoicing.model.LineItem"/>
+    <fullyQualifiedTypeName name="invoicing.model.Item"/>
+    <fullyQualifiedTypeName name="invoicing.model.Order"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
 </qualifiedTypeNameHistroy>

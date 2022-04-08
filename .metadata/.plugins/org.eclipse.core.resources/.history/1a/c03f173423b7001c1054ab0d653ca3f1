@@ -1,0 +1,35 @@
+package invoicing.ui;
+
+import java.util.Scanner;
+
+import invoicing.datastore.Database;
+import invoicing.model.Customer;
+import invoicing.model.Item;
+
+public class Client {
+
+	public static void main(String[] args) {
+		Database database = new Database();
+		
+		Customer customers[] = database.createCustomer();
+		Item items[] = database.createItems();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("How many items do you want to purchase");
+		int count = sc.nextInt();
+		do {
+			System.out.println("Choose an Item to purchase");
+			System.out.println("Id\tName\tManufacturer\tPrice");
+			System.out.println("-----------------------------------------------------------");
+			for(Item item : items)
+			{
+				System.out.print(item.getItemid()+"\t"+item.getItemname()
+				+"\t"+item.getManufacturer()+"\t\t"+item.getPrice());
+				System.out.println();
+			}
+			int itemid = sc.nextInt();
+			
+		}while(count!=0);
+
+	}
+
+}

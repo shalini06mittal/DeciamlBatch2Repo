@@ -1,0 +1,30 @@
+package invoicing.ui;
+
+import invoicing.datastore.Database;
+import invoicing.model.Customer;
+import invoicing.model.Item;
+
+public class Client {
+
+	public static void main(String[] args) {
+		Database database = new Database();
+		
+		Customer customers[] = database.createCustomer();
+		Item items[] = database.createItems();
+		
+		char ans = 'n';
+		do {
+			System.out.println("Choose an Item to purchase");
+			System.out.println("Id\tName\tManufacturer\tPrice");
+			System.out.println("-----------------------------------------------------------");
+			for(Item item : items)
+			{
+				System.out.print(item.getItemid()+"\t"+item.getItemname()
+				+"\t"+item.getManufacturer()+"\t\t"+item.getPrice());
+				System.out.println();
+			}
+		}while(ans=='y' || ans == 'Y');
+
+	}
+
+}
